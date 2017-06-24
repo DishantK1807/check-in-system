@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <form action="{{ url_for('view') }}" method="get">
+        <div class="form-group">
+                <button class="btn btn-info" type="submit">View All Events</button>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    View Events
+{% endblock %}
+
+{% block main %}
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody align="left">
+                 {% for row in rows %}
+                <a>
+                     <tr>
+                        <td>{{ row["title"] }}</td>
+
+                    </tr>
+                </a>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
